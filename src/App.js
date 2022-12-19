@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Card from "./Card";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="absolute flex flex-col justify-center items-center min-h-full h-fit w-full bg-Dark_cyan py-12
+		after:content-[''] after:bg-[url('/public/bg-pattern-top.svg')] after:inline after:absolute after:h-full after:aspect-square after:right-1/2 after:bottom-1/2 after:bg-no-repeat after:bg-cover after:-scale-y-100 after:bg-right-bottom
+		before:content-[''] before:bg-[url('/public/bg-pattern-bottom.svg')] before:inline before:absolute before:left-1/2 before:top-1/2 before:w-1/2 before:h-1/2 before:bg-no-repeat before:bg-cover">
+			<Card></Card>
+		</div>
+	);
 }
 
 export default App;
