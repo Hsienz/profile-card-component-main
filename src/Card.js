@@ -1,3 +1,5 @@
+import victorImg from './assets/image-victor.jpg'
+
 const Data = (props) => {
 	return (
 		<div className="text-center">
@@ -7,6 +9,7 @@ const Data = (props) => {
 	);
 };
 
+
 const Card = () => {
 	return (
 		<div
@@ -14,8 +17,8 @@ const Card = () => {
         bg-[url('/public/bg-pattern-card.svg')] bg-[length:100%_35%] bg-no-repeat gap-4 rounded-3xl pt-10"
 		>
 			<img
-				className="w-32 rounded-full border-white border-[5px] border-solid"
-				src="/public/image-victor.jpg"
+				className="w-32 aspect-square rounded-full border-white border-[5px] border-solid"
+				src={victorImg}
 				alt=""
 			/>
 
